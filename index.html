@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        *{
+            margin: 0xp;
+            padding: 0px;  
+        }
+        body{
+            background-color:  #442b32;
+        }
+        .app{
+            background: #fff;
+            width: 90%;
+            max-width: 600px;
+           margin: 40px auto 0; 
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .app h1{
+font-weight: 25px;
+color: #001e4d;
+font-weight: 600;
+border-bottom: 1px solid #333;
+padding-bottom: 30px;
+        }
+        .quiz{
+            padding: 20px 0;
+        }
+        .quiz h2{
+             font-size: 18px;
+             color: #001e4d;
+             font-weight: 600;
+        }
+        .btn{
+            background: #fff;
+            color: #222;
+            font-weight: 500;
+            width: 100%;
+            border: 1px solid #222;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: left;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+
+        }
+        .btn:hover{
+            background: #222;
+            color:#fff;
+        }
+        #next-btn{
+            background: #001e4d;
+            color:#fff;
+            font-weight: 500px;
+            width: 150px;
+            bottom: 0;
+            padding: 10px;
+            margin: 10px auto 0;
+            border-radius: 4px;
+            cursor: pointer;
+            display:none;
+        }
+        @media (width<=500px) {
+  .app{
+    width: 92%;
+    padding:10px;
+
+  }
+  body{
+background-color: blueviolet;
+  }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Simpel Quiz <br>by vipin tiwari</h1>
+        <div class="quiz">
+            <h2 id="question">Question gose here</h2>
+            <div id="answer-button">
+                <button class="btn"> Answer1</button>
+                <button class="btn"> Answer2</button>
+                <button class="btn"> Answer3</button>
+                <button class="btn"> Answer4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="a.js"></script>
+</body>
+</html>
